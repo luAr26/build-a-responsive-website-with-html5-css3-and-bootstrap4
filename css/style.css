@@ -1,0 +1,130 @@
+/* FONT FACES */
+@font-face {
+  font-family: 'Cubano-Regular';
+  src: local('../fonts/Cubano-Regular.otf'), url('../fonts/Cubano-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  /* background-color: green; */
+  background: url('../img/pattern.jpg') center center;
+  font-family: 'Cubano-Regular';
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# COVER
+--------------------------------------------------------------*/
+
+#cover {
+  height: 100%;
+  background: url('../img/trees.jpg') center;
+  background-size: cover;
+}
+
+#cover>.container,
+#cover>.container>.row {
+  height: 100%;
+}
+
+#cover>.container>.row>.col-sm-5 {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.wall-sticker {
+  font-family: 'Cubano-Regular';
+  /* padding: 14rem 20rem 16rem 3rem; */
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.moto {
+  font-family: 'Cubano-Regular';
+  font-size: 3rem;
+  /* margin-top: 15.3125rem;
+  margin-left: 21.875rem; */
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/*--------------------------------------------------------------
+# BUTTONS
+--------------------------------------------------------------*/
+
+.btn:active,
+.btn:focus {
+  box-shadow: none !important;
+  /* without this if you keep the button pressed the blue box shadow appears. I don't know how to disable it otherwise. */
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(19, 128, 26, 1);
+  font-family: 'Nunito-Regular';
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: rgba(19, 128, 36, .5);
+  border: 1px solid rgba(19, 128, 26, 0);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: rgba(19, 128, 36, .5);
+  border-color: rgba(19, 128, 36, .5);
+}
+
+.fa-arrow-down {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.fa-arrow-down:hover {
+  color: rgba(19, 128, 36, .5);
+  transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+# SPANS
+--------------------------------------------------------------*/
+
+.bold-green {
+  color: rgba(19, 128, 35, 0.89);
+}
+
+.green-underline {
+  border-bottom: 1px solid rgba(19, 128, 35, 0.89);
+}
+
+/*--------------------------------------------------------------
+# NAVBAR
+--------------------------------------------------------------*/
+
+.navbar-brand {
+  font-family: 'Cubano-Regular';
+  padding-right: 1rem;
+}
+
+#main-nav {
+  font-family: 'Nunito-Regular';
+}
+
+#main-nav li a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-nav li a:hover {
+  border-bottom: 1px solid green;
+}
