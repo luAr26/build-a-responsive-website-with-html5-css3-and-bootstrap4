@@ -1,20 +1,22 @@
 /* FONT FACES */
 @font-face {
-  font-family: 'Cubano-Regular';
-  src: local('../fonts/Cubano-Regular.otf'), url('../fonts/Cubano-Regular.otf') format('opentype');
+  font-family: "Cubano-Regular";
+  src: local("../fonts/Cubano-Regular.otf"),
+    url("../fonts/Cubano-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Nunito-Regular';
-  src: local('../fonts/Nunito-Regular.ttf'), url('../fonts/Nunito-Regular.ttf') format('truetype');
+  font-family: "Nunito-Regular";
+  src: local("../fonts/Nunito-Regular.ttf"),
+    url("../fonts/Nunito-Regular.ttf") format("truetype");
 }
 
 html,
 body {
   height: 100%;
   /* background-color: green; */
-  background: url('../img/pattern.jpg') center center;
-  font-family: 'Cubano-Regular';
+  background: url("../img/pattern.jpg") center center;
+  font-family: "Cubano-Regular";
   font-size: 16px;
 }
 
@@ -24,7 +26,7 @@ body {
 
 #cover {
   height: 100%;
-  background: url('../img/trees.jpg') center;
+  background: url("../img/trees.jpg") center;
   background-size: cover;
 }
 
@@ -38,7 +40,7 @@ body {
 }
 
 .wall-sticker {
-  font-family: 'Cubano-Regular';
+  font-family: "Cubano-Regular";
   /* padding: 14rem 20rem 16rem 3rem; */
   font-size: 5rem;
   color: #fff;
@@ -46,7 +48,7 @@ body {
 }
 
 .moto {
-  font-family: 'Cubano-Regular';
+  font-family: "Cubano-Regular";
   font-size: 3rem;
   /* margin-top: 15.3125rem;
   margin-left: 21.875rem; */
@@ -69,20 +71,20 @@ body {
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid rgba(19, 128, 26, 1);
-  font-family: 'Nunito-Regular';
+  font-family: "Nunito-Regular";
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: rgba(19, 128, 36, .5);
+  background-color: rgba(19, 128, 36, 0.5);
   border: 1px solid rgba(19, 128, 26, 0);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-  background-color: rgba(19, 128, 36, .5);
-  border-color: rgba(19, 128, 36, .5);
+  background-color: rgba(19, 128, 36, 0.5);
+  border-color: rgba(19, 128, 36, 0.5);
 }
 
 .fa-arrow-down {
@@ -91,7 +93,7 @@ body {
 }
 
 .fa-arrow-down:hover {
-  color: rgba(19, 128, 36, .5);
+  color: rgba(19, 128, 36, 0.5);
   transition: 0.3s;
 }
 
@@ -112,12 +114,12 @@ body {
 --------------------------------------------------------------*/
 
 .navbar-brand {
-  font-family: 'Cubano-Regular';
+  font-family: "Cubano-Regular";
   padding-right: 1rem;
 }
 
 #main-nav {
-  font-family: 'Nunito-Regular';
+  font-family: "Nunito-Regular";
 }
 
 #main-nav li a {
@@ -127,4 +129,301 @@ body {
 
 #main-nav li a:hover {
   border-bottom: 1px solid green;
+}
+
+/*--------------------------------------------------------------
+# FEATURES
+--------------------------------------------------------------*/
+
+.section-features,
+.section-timeline {
+  padding: 5rem 0;
+}
+
+#features .col-sm-3 {
+  text-align: center;
+}
+
+.section-heading,
+.section-subheading {
+  text-align: center;
+}
+
+#features .col-sm-3 i {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#features .col-sm-3 i:hover {
+  color: rgba(19, 128, 35, 0.89);
+}
+
+#features .col-sm-3 p {
+  padding-top: 1rem;
+  font-family: "Nunito-Regular";
+  font-size: 1rem;
+}
+
+#features .col-sm-3 hr {
+  border-top: 1px solid rgba(19, 128, 35, 0.89);
+  max-width: 8rem;
+}
+
+/*--------------------------------------------------------------
+# TIMELINE
+--------------------------------------------------------------*/
+.section-timeline {
+  background-color: #fff;
+}
+
+.timeline {
+  padding: 1.5rem 0 4rem;
+  list-style-type: none;
+  margin-bottom: 0;
+  position: relative;
+  /* padding-left: 0; */
+}
+
+/* GREY LINE IN THE MIDDLE */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline>li {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+/* LI CLEARFIX */
+.timeline>li::before,
+.timeline>li::after {
+  content: "";
+  display: table;
+}
+
+.timeline>li::after {
+  clear: both;
+}
+
+/* END LI CLEARFIX */
+
+.timeline-panel {
+  width: 50%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 1.2rem;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline p {
+  font-family: "Nunito-Regular";
+  font-weight: 700;
+}
+
+.timeline>li:nth-child(odd) {
+  padding-right: 6rem;
+}
+
+.timeline>li:nth-child(even) {
+  padding-left: 6rem;
+}
+
+.timeline-badge {
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(19, 128, 36, 0.8);
+  line-height: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  margin-left: -1.5rem;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.timeline>li:nth-child(even) .timeline-panel {
+  float: right;
+}
+
+#parallax {
+  text-align: center;
+  background: url("../img/trees.jpg") center repeat fixed;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+#parallax .section-heading {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.parallax-button {
+  width: 12.5rem;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# CARDS
+--------------------------------------------------------------*/
+
+#cards {
+  padding: 5rem 0;
+}
+
+.card {
+  margin-top: 3rem;
+}
+
+.card a {
+  color: rgba(19, 128, 36, .9);
+}
+
+.card a:hover {
+  color: rgba(19, 128, 36, 1);
+}
+
+.card-img-holder {
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card-text {
+  font-family: 'Nunito-Regular';
+}
+
+/*--------------------------------------------------------------
+# NUMBERS
+--------------------------------------------------------------*/
+
+.section-numbers {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.section-numbers .section-subheading {
+  margin-bottom: 3rem;
+}
+
+.num {
+  display: table;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.3rem;
+  width: 8.75rem;
+  height: 8.75rem;
+}
+
+.num {
+  border-radius: 50%;
+  background: rgba(19, 128, 36, 0.9);
+  text-align: center;
+}
+
+.num-content {
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+}
+
+.num-content p {
+  margin-top: 1rem;
+}
+
+.num-content:hover {
+  color: #222;
+}
+
+/*--------------------------------------------------------------
+    # TESTIMONIALS
+    --------------------------------------------------------------*/
+
+.section-testimonials {
+  padding-top: 5rem;
+}
+
+.testimonial {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial img:hover {
+  transform: scale(0.96);
+}
+
+blockquote {
+  font-family: 'Nunito-Regular';
+}
+
+blockquote i {
+  margin-right: .3rem;
+}
+
+.testimonial-hr {
+  border-top: 1px solid rgba(19, 128, 36, 1);
+  /* width: 15rem; */
+  background-color: rgba(19, 128, 36, 1);
+  margin-bottom: 0.3rem;
+}
+
+blockquote cite {
+  font-size: 0.875rem;
+}
+
+/*--------------------------------------------------------------
+    # CONTACT
+    --------------------------------------------------------------*/
+.section-contact {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+#contact .control-label {
+  /* font-size: 1.3rem; */
+  /* height: 80%; */
+  padding-top: .45rem;
+}
+
+#contact h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#contact .btn {
+  background-color: rgba(19, 128, 36, .9);
+  border-color: rgba(19, 128, 36, .9);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(19, 128, 36, .3);
+  border-color: rgba(19, 128, 36, .9);
 }
