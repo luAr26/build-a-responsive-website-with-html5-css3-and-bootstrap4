@@ -444,7 +444,7 @@ footer {
 
 .social-links li {
   display: inline-block;
-  margin-right: 1.2rem;
+  /* margin-right: 1.2rem; */
   margin-top: 2rem;
   padding-right: 1.5rem;
 }
@@ -488,6 +488,7 @@ footer p {
   color: #888888;
   text-align: center;
   font-size: 1.1rem;
+  margin-top: 2.7rem;
 }
 
 .fa-chevron-circle-up {
