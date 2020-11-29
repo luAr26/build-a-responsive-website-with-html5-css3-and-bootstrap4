@@ -427,3 +427,75 @@ blockquote cite {
   box-shadow: 0 0 0 0.2rem rgba(19, 128, 36, .3);
   border-color: rgba(19, 128, 36, .9);
 }
+
+/*--------------------------------------------------------------
+    # FOOTER
+    --------------------------------------------------------------*/
+footer {
+  background-color: #222;
+  padding-bottom: 0.875px;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 1.2rem;
+  margin-top: 2rem;
+  padding-right: 1.5rem;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links li a,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  font-size: 160%;
+}
+
+.fa-facebook-square,
+.fa-google-plus-square,
+.fa-twitter-square,
+.fa-instagram-square {
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-google-plus-square:hover {
+  color: #dd4b39;
+}
+
+.fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.fa-instagram-square:hover {
+  color: #517fa4;
+}
+
+footer p {
+  color: #888888;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.fa-chevron-circle-up {
+  margin-top: 2.2rem;
+  color: rgb(14, 96, 27);
+  transition: all .3s ease-in-out;
+}
+
+.fa-chevron-circle-up:hover {
+  color: rgba(14, 96, 27, .92);
+}
