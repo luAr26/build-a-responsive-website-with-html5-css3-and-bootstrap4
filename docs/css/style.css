@@ -508,10 +508,12 @@ footer p {
 .js-wp-1,
 .js-wp-2,
 .timeline_heading,
-.timeline_subheading {
+.timeline_subheading,
+.timeline li,
+.js-wp-3,
+.js-wp-4,
+.js-testimonial-1,
+.js-testimonial-2,
+.js-testimonial-3 {
   opacity: 0;
-}
-
-#features .row {
-  position: relative;
 }
