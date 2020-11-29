@@ -500,3 +500,18 @@ footer p {
 .fa-chevron-circle-up:hover {
   color: rgba(14, 96, 27, .92);
 }
+
+/*--------------------------------------------------------------
+# ANIMATIONS
+--------------------------------------------------------------*/
+
+.js-wp-1,
+.js-wp-2,
+.timeline_heading,
+.timeline_subheading {
+  opacity: 0;
+}
+
+#features .row {
+  position: relative;
+}
